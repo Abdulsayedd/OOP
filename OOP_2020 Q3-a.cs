@@ -43,7 +43,7 @@ namespace program
             get { return CanEat; }
         }
 
-        public void swim()
+        private void swim()
         {
 
         }
