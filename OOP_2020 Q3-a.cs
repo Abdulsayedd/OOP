@@ -30,8 +30,19 @@ namespace program
     }
     public class Fish : Animal
     {
-        public int SizeInFt;
-        public bool CanEat;
+        private int SizeInFt;
+        private bool CanEat;
+        public int SIZEINFT
+        {
+            set { SizeInFt = value; }
+            get { return SizeInFt; }
+        }
+        public bool CANEAT
+        {
+            set { CanEat = value; }
+            get { return CanEat; }
+        }
+
         public void swim()
         {
 
@@ -52,8 +63,8 @@ namespace program
         static void Main(string[] Args)
         {
             Fish f = new Fish();
-            f.SizeInFt = 3;
-            f.CanEat = true;
+            f.CANEAT = true;
+            f.SIZEINFT = 3;
             f.swim();
         }
     }
