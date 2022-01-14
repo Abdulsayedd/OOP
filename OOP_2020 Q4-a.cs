@@ -9,19 +9,22 @@ namespace program
         {
             int[] id = new int[1000];
             int[] price = new int[1000];
+            int[] quantity= new int[1000];
             for (int i = 0; i < 1000; i++)
             {
                 Console.WriteLine("Enter {0} id", (i + 1));
                 id[i] = int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter {0} price", (i + 1));
                 price[i] = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter {0} quantity", (i + 1));
+                quantity[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("Less than 10$ : ");
-            for(int i = 0; i < 1000; i ++)
+            Console.WriteLine("Less than 10 pieces : ");
+            for (int i = 0; i < 1000; i++)
             {
-                if(price[i]<10)
+                if (quantity[i] < 10)
                 {
-                    Console.Write(id[i]+" ");
+                    Console.Write(id[i] + " ");
                 }
             }
             Console.WriteLine("More than 500$ : ");
