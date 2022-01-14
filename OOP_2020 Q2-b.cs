@@ -14,7 +14,8 @@ namespace program
             {
                 arr[i] = int.Parse(Console.ReadLine());
                 sum += arr[i];
-                maxx=Math.Max(maxx, arr[i]);
+                if(arr[i]>maxx)
+                    maxx=arr[i];
             }
             sum /= 100;
             Console.WriteLine("Average = {0} , Max = {1}",sum,maxx);
